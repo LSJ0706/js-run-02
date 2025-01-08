@@ -20,7 +20,7 @@ function calculateStatistics(users) {
     },
     { averageAge: 0, maxAge: -Infinity }
   );
-  newAge.averageAge = users.length > 0 ? result.totalAge / users.length : 0;
+  newAge.averageAge = users.length > 0 ? newAge.averageAge / users.length : 0;
   newAge.maxAge = newAge.maxAge === -Infinity ? 0 : newAge.maxAge;
   return newAge;
   // TODO
